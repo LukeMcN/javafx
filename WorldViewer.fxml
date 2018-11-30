@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="imageView" fitHeight="407.0" fitWidth="628.0" layoutX="-1.0" layoutY="-25.0" pickOnBounds="true" preserveRatio="true" />
+      <Circle fill="DODGERBLUE" layoutX="299.0" layoutY="326.0" radius="42.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="DODGERBLUE" layoutX="549.0" layoutY="326.0" radius="42.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="DODGERBLUE" layoutX="48.0" layoutY="326.0" radius="42.0" stroke="BLACK" strokeType="INSIDE" />
+      <ImageView fitHeight="73.0" fitWidth="81.0" layoutX="509.0" layoutY="290.0">
+         <image>
+            <Image url="@../../../My%20Pictures/Saved%20Pictures/Arrow.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="LeftButton" fitHeight="73.0" fitWidth="81.0" layoutX="8.0" layoutY="290.0" nodeOrientation="RIGHT_TO_LEFT">
+         <image>
+            <Image url="@../../../My%20Pictures/Saved%20Pictures/Arrow.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="ForwardButton" layoutX="251.0" layoutY="279.0" mnemonicParsing="false" onAction="#pressForwardButton" prefHeight="90.0" prefWidth="93.0" text="Forward" visible="false" />
+      <Button fx:id="LeftButton" layoutX="6.0" layoutY="279.0" mnemonicParsing="false" onAction="#pressLeftButton" prefHeight="90.0" prefWidth="88.0" text="Left" visible="false" />
+      <Button fx:id="RightButton" layoutX="504.0" layoutY="282.0" mnemonicParsing="false" onAction="#pressRightButton" prefHeight="85.0" prefWidth="88.0" text="Right" visible="false" />
+      <ImageView fitHeight="73.0" fitWidth="81.0" layoutX="259.0" layoutY="290.0" rotate="-90.0">
+         <image>
+            <Image url="@../../../My%20Pictures/Saved%20Pictures/Arrow.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="ICWorld" layoutX="11.0" layoutY="14.0" mnemonicParsing="false" onAction="#doStartNewWorld" text="New Game" />
+      <Button fx:id="PickUpButton" layoutX="20.0" layoutY="244.0" mnemonicParsing="false" onAction="#pressPickUpButton" prefHeight="22.0" prefWidth="56.0" text="Pick Up" />
+      <Button fx:id="PutDownButton" layoutX="516.0" layoutY="244.0" mnemonicParsing="false" onAction="#pressButton" text="Put Down" />
+      <ChoiceBox fx:id="ItemsCarried" layoutX="463.0" layoutY="14.0" prefWidth="150.0" />
+      <TextField fx:id="MessageField" editable="false" layoutX="225.0" layoutY="14.0" />
+   </children>
+</AnchorPane>
